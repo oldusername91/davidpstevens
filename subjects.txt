@@ -1,0 +1,21 @@
+CPT110 Introduction to IT|SP3-2012|D
+CPT120 Introduction to Programming (Python)|SP1-2013|HD
+CPT121 Programming 1 (Java)|SP2-2013|HD
+NET102 Internet and Everyday Life|SP3-2013|P
+WEB101 Web Communications|SP3-2013|P
+MTH10002 Dealing with Numbers|SP3-2014|HD
+CPT221 Programming 2 (Java)|SP3-2014|D
+HST110 The Making of Australia|SP4-2014|C
+MMC120 Web Animation with Flash|SP4-2014|D
+CPT230 Software Engineering Fundamentals|SP1-2015|HD
+CPT112 User Centered Design|SP1-2015|HD
+DIG251 Internet Design Introduction|SP2-2015|C
+CPT220 Programming in C|SP2-2015|HD
+CMM18 News and Politics|SP2-2015|D
+DIG252 Internet Interactivity Design|SP3-2015|D
+CPT250 Data Com. and Net Centric Computing|SP3-2015|D
+CPT270 Web Programming|SP4-2015|HD
+CPT251 Security in IT and Computing|SP4-2015|HD
+CPT140 Database Concepts|SP4-2015|HD
+CPT330 Software Engineering Project Management|SP1-2016|HD
+DIG351 Internet Dynamic Environment Design|SP1-2016|D

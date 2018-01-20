@@ -1,0 +1,90 @@
+
+body{
+     background-color: darkmagenta;
+        background-image: url(3px-tile.png);
+        color:white;
+        font-family: "Antic Slab";
+    }
+        h1, h2, h3{
+            font-family: "Raleway";
+        }
+        h1{
+            
+            font-size: 74px;
+        }
+        h1 span{
+            font-family: "Antic Slab";
+            font-size: 100px;
+        }
+        header{
+            background-color: black;
+            opacity:0.8;
+            border-radius: 26px;
+            text-align: center;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            margin-left: 210px;
+        }
+        .content{
+            margin-left:auto;
+            margin-right: auto;
+            width:80%;
+            background-color: white;
+            color:black;
+            opacity:0.9;
+            border-radius: 25px;
+            margin-top:20px;
+            background-image: url(brushed-alum-dark.png);
+            padding: 30px 50px 30px 50px;
+            
+        }
+        h2{
+            font-size: 40px;
+        }
+        h3{
+            font-size: 30px;
+        }
+        h4{
+            font-size: 26px;
+            font-family: "Raleway";
+        }
+        p, ul{
+            font-size: 22px;
+            line-height: 1.4;
+        }
+        img{
+            position: absolute;
+            top:50px;
+        }
+        #col2,#col3{
+            float:right;
+            width:300px;
+            background: white;
+            border-radius: 25px;
+            margin-left: 10px;
+            margin-right: 10px;
+            
+        }
+        #col1{
+            background: white;
+            border-radius: 25px;
+            margin-left: 10px;
+            margin-right: 10px;
+            float:right;
+            width:300px;
+            
+        }
+        #col1 ul, #col2 ul, #col3 ul{
+            list-style: none;
+            font-size: 18px;
+            width:180px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        #col1 h4, #col2 h4, #col3 h4{
+            text-align: center;
+        }
+        .skills{
+            height: 280px;
+            width: 1000px;
+        }

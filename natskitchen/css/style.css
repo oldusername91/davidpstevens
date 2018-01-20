@@ -1,0 +1,144 @@
+#headNavbar{
+    position:relative;
+    top: 20px;
+}
+.navbar{
+    z-index:2;
+}
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+.navbar ul li{
+    display: inline;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+}
+.navbar ul li a img{
+     
+}
+#horizontalLine{
+    min-height: 50px;
+    background-color:#47036F;
+    position:absolute;
+    top:70px;
+    box-shadow: 0px 3px 14px 0px rgba(0,0,0,0.75);
+    z-index: 1;
+}
+.navva{
+    text-align: center;
+}
+.header{
+    box-shadow: 0px 4px 33px -6px rgba(0,0,0,0.75);
+    background-image:url(../img/scribble-light.png);
+    height:130px;
+    background-color: #3e0000;
+
+}
+.navtSticky{
+    font-family: 'Patrick Hand SC';
+    font-size: 34px;
+}
+.navt{
+    font-family: 'Patrick Hand SC';
+    font-size: 34px;
+    position:relative;
+    top: 14px;
+}
+#line{
+    background-color: purple;
+    height:20px;
+    margin-top: 30px;
+}
+#innerFooter{
+    background-image:url(../img/scribble-light.png);
+    background-color: #3e0000;
+    box-shadow: 0px 4px 33px -6px rgba(0,0,0,0.75);
+}
+.logoImg{
+    padding: 6px;
+}
+.sidebar{
+    background-color: #f6f6f6;
+    height:100%;
+    position:relative;
+    z-index: -1;
+}
+#orderBtn{
+    background: rgba(248,80,50,1);
+    cursor: pointer;
+    box-shadow: inset 0px 3px 14px 0px rgba(0,0,0,0.75);
+}
+#indexWrapper{
+    margin-top: 10px;
+}
+.gutter{
+    height: 100%;
+}
+.bxslider{
+    margin:0;
+    padding:0;
+}
+.grow{
+    transition-duration: .2s;
+    transform: scale(1.1);
+}
+.cartBar{
+    background-color: #363535;
+    height:35px;
+}
+#cartIcon{
+    color:white;
+}
+.boxHeader{
+    background-color:#363535;
+    border-radius: 10px;
+    color:white;
+    padding: 10px 10px;
+    font-size: 42px;
+    font-family: 'open sans';
+    box-shadow: 0px 4px 11px -1px rgba(0,0,0,0.44);
+}
+.box{
+    padding: 0 15px;
+    font-size: 20px;
+    
+}
+.boxImg{
+    max-width: 75%;
+    box-shadow: 0px 4px 11px -1px rgba(0,0,0,0.44);
+}
+.imgRow{
+    text-align: center;
+    margin-bottom: 5px;
+}
+#stickyMenu{
+    position:fixed;
+    top:0px;
+    margin: 0 auto;
+    background-color:white;
+    border-radius: 5px;
+    z-index: 90;
+    border: 1px solid grey;
+    box-shadow: 0px 4px 33px -6px rgba(0,0,0,0.75);
+    margin: 0;
+    padding: 0;
+}
+#stickyNav tr td{
+    width:180px;
+    text-align: center;
+}
+#stickyNav li{
+    margin:5px;
+    
+}
+.stickyLink{
+    text-decoration: none;
+}
+.navva a{
+    text-decoration: none;
+}

@@ -1,0 +1,302 @@
+			* { margin:0; padding:0; }
+			@font-face
+			{
+				font-family: "raleway";
+				src: url("fonts/raleway-regular.ttf") format("truetype");
+			}
+			@font-face
+			{
+				font-family: "montserrat";
+				src: url("fonts/montserrat-regular.otf") format("opentype");
+			}
+		
+			body
+			{
+			background-color: #a4d4fe;
+			}
+
+			/* Background Image Reference:  Wikimedia Commons, "Bald Hill View over Stanwell Park", online, accessed on 10-6-15,  https://upload.wikimedia.org/wikipedia/commons/f/f8/Bald_Hill_view_over_Stanwell_Park,_NSW_Australia.JPG */
+			#home
+			{
+				line-height: 200%;
+				padding-top: 4%;
+				padding-bottom: 4%;
+				background:url(images/bald.jpg) no-repeat center;
+ 				background-size: cover;
+			}
+						
+			header
+			{
+				z-index:4;
+				top: 0;
+				height:87px;
+				position: fixed;	
+				width: 100%;
+				background-color: #ff6200;
+			}
+			header.a
+			{
+				background-color: #ada7a8;
+			}
+			
+			nav
+			{
+				z-index:4;
+				background-color:  #ff9f00;
+				font-family: "montserrat";
+				position: fixed;
+				top: 87px;
+				height:30px;
+				width: 100%;
+				font-size: 24px;
+				margin-left: 0;
+				margin-right: 0;
+				margin-top: 0;
+				padding-top: 0;
+		
+			}
+			nav a
+			{
+				color: black;
+				text-decoration: none;
+				color: white;
+				margin: auto;
+				padding-right: 2%;
+				padding-left: 2%;
+				padding-top: 0;
+				margin-top: 0;
+			}
+			nav a:hover
+			{
+				background-color:#d15000;
+				width: 80px;
+			}
+			#content
+			{
+			z-index:1;
+			position:absolute;
+			top: 107px;
+			}
+			/* content1 properties here */
+			
+			#content1
+			{
+				font-family: "raleway";
+				margin: 3% 7% 7% 3%;
+				background-color: white;
+				opacity: .91;
+				width:400px;
+				padding-left:5%;
+				padding-right:5%;
+				padding-top: 1%;
+				padding-bottom: 2%;
+				border-radius: 25px;
+				line-height: 250%;
+			}
+			
+			#content1 h1
+			{
+				font-size:34px;
+				font-family: "montserrat";
+				
+			}			
+
+			
+			/* content2 properties here */
+
+
+
+			.content2 h3
+			{
+				font-size:18px;
+			}
+			.content2
+			{   				
+				font-family: "raleway";
+				margin: 3% 13% 3% 13%;
+				background-color: white;
+				padding-left:3%;
+				padding-right:3%;
+				padding-top: 3px;
+				padding-bottom: 3px;
+				border-radius: 25px;
+				width: 890px;
+				min-height: 400px;
+				
+			}			
+			
+			.content2 img
+			{
+				padding: 15px 0px 0px 0px;
+
+			}
+			.content2 ul
+			{
+				list-style-type:none;
+			
+			}
+			.content2  ul li
+			{
+				margin:20px 10px 10px 2px;
+				vertical-align:top;
+				display:table-row;
+			}
+			.content2 a
+			{
+			text-decoration: none;
+			}
+			.content2 ul li img 
+			{
+				padding: 0;
+				margin:0;
+				border: 0;
+    				vertical-align: middle;	
+			}
+			
+			.content2 h1
+			{
+				font-size:38px;
+				font-family: "montserrat";
+			}
+			
+			.content2 p
+			{
+				font-family: "raleway";
+				font-size: 14px;
+				line-height: 175%;
+			}
+			
+			.content2 article
+			{
+				
+				margin: 15px 5px 0px 5px;
+				
+			}
+			
+			.content2 figure
+			{
+				font-family: "raleway";
+				font-size: 12px;
+				padding-top: 1%;
+			}
+			footer {
+			background-color: #EAEAEA;
+			font-family: "raleway";
+			}
+
+			#photos
+			{
+				float: right;
+				padding: 10px 20px 10px 20px;
+				width: 420px;
+				margin: 1% 1% 1% 1%;
+			}
+		
+			#info
+			{
+				float: right;
+				font-family: raleway;
+				width:270px;
+				background-color: #EAEAEA;
+				border-radius: 25px;
+				padding: 10px 10px 10px 10px;
+				margin: 15px 10px 10px 10px;
+				
+			}
+			#info h3
+			{
+			text-align: center;
+			font-size: 20px;
+			font-family:"montserrat";
+			}
+			#info ul
+			{
+				list-style-type:none;
+			
+			}
+			#info ul li
+			{
+				margin:2px 10px 10px 2px; 
+				vertical-align:top;
+				display:table-row;
+			
+			}
+			#info ul li img 
+			{
+    				vertical-align: middle;	
+			}
+			.info2
+			{
+				float: left;
+				font-family: raleway;
+				width:400px;
+				background-color: #EAEAEA;
+				border-radius: 25px;
+				padding: 10px 10px 10px 10px;
+				margin: 15px 10px 10px 10px;
+				
+			}
+			.info2 h3
+			{
+			text-align: center;
+			font-size: 20px;
+			font-family:"montserrat";
+			}
+			.info2 ul
+			{
+				list-style-type:none;
+			
+			}
+			.info2  ul li
+			{
+				margin:2px 10px 10px 2px; 
+				vertical-align:top;
+				display:table-row;
+			
+			}
+			.info2 ul li img 
+			{
+				padding: 0;
+				margin:0;
+				border: 0;
+    				vertical-align: middle;	
+			}
+			#info3
+			{
+				
+				font-family: raleway;
+				width:400px;
+				background-color: #EAEAEA;
+				border-radius: 25px;
+				padding: 10px 10px 10px 15px;
+				margin: 15px 0px 10px 0px;
+				
+			}
+			#info3 h3
+			{
+			padding: 20px 20px 20px 20px;
+			font-size: 20px;
+			font-family:"montserrat";
+			}
+			#info3 ul
+			{
+				list-style-type:none;
+			
+			}
+			#info3  ul li
+			{
+				
+				display:table-row;
+			
+			}
+			#info3 ul li img 
+			{
+				padding: 0;
+				margin:0;
+				border: 0;
+    				vertical-align: middle;
+			}			
+            .container {
+            height:500px;
+            width: 900px;
+            }
