@@ -44,7 +44,7 @@
 <div class="row jumbotron">
   <div class="col-xs-12"><h1>Hi!</h1></div>
   <p class="topp">I am a web developer with a load of skills, and I really love to solve problems in elegant ways! I am based in Sydney, I'm Dad to Eric my awesome son!</p>
-  <p class="">Don't hold my love of PHP against me, modern PHP is a fantastic tool, and when used properly it is super powerful! That don't have problems with using other modern technologies, but PHP is my favourite!</p>
+  <p class="">Don't hold my love of PHP against me, modern PHP is a fantastic tool, and when used properly it is super powerful! That doesn't mean I have problems with using other modern technologies, but PHP is my favourite!</p>
   <h2 class="">Below are some projects I've worked on during my time at Uni:</h2>
 
 </div>
