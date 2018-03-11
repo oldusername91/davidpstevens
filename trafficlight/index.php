@@ -21,32 +21,39 @@
 <script>
   function gogreen()
   {
-    window.setTimeout(function(){
-      r = document.getElementById('red');
-      g = document.getElementById('green');
 
-      r.classList.add('off');
-      g.classList.remove('off');
-    }, 500);
+    if (document.getElementById('green').classList.contains('off'))
+    {
+      window.setTimeout(function(){
+        r = document.getElementById('red');
+        g = document.getElementById('green');
+
+        r.classList.add('off');
+        g.classList.remove('off');
+      }, 500);
+    }
   }
 
   function gored()
   {
-    window.setTimeout(function(){
-      y = document.getElementById('yellow');
-      g = document.getElementById('green');
-
-      g.classList.add('off');
-      y.classList.remove('off');
-
+    if (document.getElementById('red').classList.contains('off'))
+    {
       window.setTimeout(function(){
-        r = document.getElementById('red');
         y = document.getElementById('yellow');
+        g = document.getElementById('green');
 
-        y.classList.add('off');
-        r.classList.remove('off');
-      }, 3000);
-    }, 500);
+        g.classList.add('off');
+        y.classList.remove('off');
+
+        window.setTimeout(function(){
+          r = document.getElementById('red');
+          y = document.getElementById('yellow');
+
+          y.classList.add('off');
+          r.classList.remove('off');
+        }, 3000);
+      }, 500);
+    }
   }
 </script>
 <style>
