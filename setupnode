@@ -36,6 +36,7 @@ PART B - Deploy your new host node.js react application.
 
   I just used an AWS EC2 ubuntu instance. SSH to this machine using the AWS key and as the user 'ubuntu'.
   You'll have to repeat step 1 of part A to install node.js on the remote machine.
+  Also, you need to, from the AWS security groups menu (from the EC2 dashboard) add HTTP connection rules inbound and outbound for the machine.
 
 
   1. Clone your repository.
