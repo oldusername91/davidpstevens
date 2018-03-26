@@ -16,9 +16,39 @@ PART A - Get a node.js react.js application and development server on your local
 	- Then the following will switch on the development server for the project.
 	npm start
 
+  3. Hookup your new application to github (or whatever version control you like).
+	
+	git init
+	git add .
+	git commit -m "Initial commit"
+	
+	- Go to github.com and create a new repository.
+	- Get the URL of the new repository and add it as a remote branch to your local git.
+	
+	git remote add origin <the URL of the repository>
+	
+	- Push to the remote
+	git push origin master
+
+
 
 PART B - Deploy your new host node.js react application.
-  1. Install NGINX
+
+  I just used an AWS EC2 ubuntu instance. SSH to this machine using the AWS key and as the user 'ubuntu'.
+  You'll have to repeat step 1 of part A to install node.js on the remote machine.
+
+
+  1. Clone your repository.
+        sudo mkdir /var/www 
+        cd /var/www
+        sudo git clone <Your repository URL>
+	
+	sudo npm install
+	sudo run build
+	sudo chown -Rf www-data:-www-data <repository root>
+      
+
+  2. Install NGINX
 
 	sudo vi /etc/apt/sources.list
 	
@@ -36,11 +66,11 @@ PART B - Deploy your new host node.js react application.
 	sudo apt update
 	sudp apt install nginx
 
-  2. Add a virtual host on NGINX.
+  3. Add a virtual host on NGINX.
 	
 	- This process is very very similar to apache.
 	- Add your new virtual host domain name to /etc/hosts
-	- Wherever you put the root directory of the hosted application, ensure its the www-data user is the group and has rwx permissions. 
+	- Put the root directory of the hosted application in /var/www/<your virtual host name>, ensure the file owned by www-data:www-data and has rwx permissions. 
 
 
 	- Then create the virtual host conf file for NGINX.
@@ -49,20 +79,17 @@ PART B - Deploy your new host node.js react application.
 	sudo vi /etc/nginx/sites-available/<virtual domain name>
 	
 	server {
-		listen 80;
-		listen [::]:80;
-
-		server_name <virtual domain name>;
-
-		root /var/www/<application root directory>;
-		index index.html;
-		autoindex on;
-
-		location / {
-		try_files $uri $uri/ =404;
-		}
+	   listen 80 default_server;
+	   root /var/www/<repository root>/build;
+	   index index.html;
+	   location / {
+	   }
 	}
 
+
 	- Then create a symbolic link to the sites-enabled NGINX directory and restart NGINX:
-	sudo ln -s /etc/nginx/sites-available/testing /etc/nginx/sites-enabled/testingo
+	sudo ln -s /etc/nginx/sites-available/<application name> /etc/nginx/sites-enabled/<application name>
 	sudo systemctl restart nginx
+
+
+    You should now be able to locally browse to <your virtual host name>/ in your browser.
