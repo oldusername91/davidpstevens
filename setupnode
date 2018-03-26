@@ -1,0 +1,68 @@
+PART A - Get a node.js react.js application and development server on your local machine.
+
+  1. Install node.js
+
+	curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+	sudo apt-get install -y nodejs
+
+  2. Create a new react application.
+	- Make a directory that will contain your new application.
+	- cd to the new directory.
+	- perform the following:
+
+	sudo npm install -g create-react-app
+	sudo create-react-app <Your application name> 
+
+	- Then the following will switch on the development server for the project.
+	npm start
+
+
+PART B - Deploy your new host node.js react application.
+  1. Install NGINX
+
+	sudo vi /etc/apt/sources.list
+	
+	- Then add the following lines (replace artful with your linux distro release name)
+
+	deb http://nginx.org/packages/ubuntu/ artful nginx
+	deb-src http://nginx.org/packages/ubuntu/ artful nginx
+
+	- Stop the apache2 service
+	
+	sudo systemctl stop apache2
+
+	- Install NGINX
+	
+	sudo apt update
+	sudp apt install nginx
+
+  2. Add a virtual host on NGINX.
+	
+	- This process is very very similar to apache.
+	- Add your new virtual host domain name to /etc/hosts
+	- Wherever you put the root directory of the hosted application, ensure its the www-data user is the group and has rwx permissions. 
+
+
+	- Then create the virtual host conf file for NGINX.
+	- Paste the following contents into the file.
+
+	sudo vi /etc/nginx/sites-available/<virtual domain name>
+	
+	server {
+		listen 80;
+		listen [::]:80;
+
+		server_name <virtual domain name>;
+
+		root /var/www/<application root directory>;
+		index index.html;
+		autoindex on;
+
+		location / {
+		try_files $uri $uri/ =404;
+		}
+	}
+
+	- Then create a symbolic link to the sites-enabled NGINX directory and restart NGINX:
+	sudo ln -s /etc/nginx/sites-available/testing /etc/nginx/sites-enabled/testingo
+	sudo systemctl restart nginx
