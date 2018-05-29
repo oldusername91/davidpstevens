@@ -64,7 +64,7 @@ margin-left:3px;
 }
 .card-block .badge{
   font-size:11px;
-  margin: 1 2px;
+  margin: 1px 2px;
 }
 .topp{
   margin-top:10px;
@@ -75,4 +75,12 @@ margin-left:3px;
   margin: 5px 0;
   display: inline;
 
+}
+.badge{
+    background-color: #222222;
+}
+
+h2 .fa{
+    font-size:11px;
+    vertical-align:super;
 }
