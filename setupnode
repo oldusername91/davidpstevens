@@ -62,10 +62,16 @@ PART B - Deploy your new host node.js react application.
 	
 	sudo systemctl stop apache2
 
+    
+    - Add the NGINX public key for GPG (since we added the repo to /etc/apt/sources.list).
+      Make sure you log on as root.
+
+    curl -O https://nginx.org/keys/nginx_signing.key && apt-key add ./nginx_signing.key
+
 	- Install NGINX
 	
 	sudo apt update
-	sudp apt install nginx
+	sudo apt install nginx
 
   3. Add a virtual host on NGINX.
 	
